@@ -1,5 +1,15 @@
+import time
+time.sleep(1)
+
+print('='*40)
+print('🧮 Mini Sistema de Operações Aritméticas')
+print('='*40)
+time.sleep(1)
+
 n1 = int(input('Primeiro valor: '))
 n2 = int(input('Segundo valor: '))
+time.sleep(0.5)
+
 opcao = 0
 while opcao != 5:
     print('''
@@ -9,6 +19,11 @@ while opcao != 5:
     [4] NOVOS NÚMEROS 
     [5] SAIR DO PROGRAMA''')
     opcao = int(input('Qual a sua opção: '))
+    print('PROCESSANDO...')
+    time.sleep(1)
+
+
+
     if opcao == 1:
         print('{} + {} = {}'.format(n1,n2,n1+n2))
     elif opcao == 2:
